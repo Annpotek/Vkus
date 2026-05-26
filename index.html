@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусный код — кафе у дома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Вкусный код</h1>
+        <p>Кафе у дома с кофе и блюдами из популярных доставок</p>
+    </header>
+  
+    <nav>
+         <ul>
+        <li><a href="index.html" target="_blank">Главная</a></li>
+        <li><a href="cooperation.html" target="_blank">Сотрудничество</a></li>
+        <li><a href="suppliers.html" target="_blank">Меню</a></li>
+		<li><a href="legal.html" target="_blank">Положения</a></li>
+    </ul>
+    </nav>
+	
+	<div class="center-image">
+    <img src="logotip.png" alt="Логотип компании" width="200" height="100">
+	</div>
+	
+    <main>
+        <section class="about">
+            <h2>О нашем кафе</h2>
+            <p>«Вкусный код» — уютное кафе у дома, где вы можете насладиться ароматным кофе разных сортов и попробовать готовые блюда от лучших сервисов доставки.</p>
+            <p>Мы заботимся о качестве и свежести каждого блюда, чтобы вы могли быстро и вкусно перекусить в комфортной обстановке.</p>
+        </section>
+        
+        <section class="menu">
+			<div class="container">
+				<h2>Наше меню</h2>
+				<div class="menu-items">
+					<div class="menu-item">
+						<h3>Эспрессо</h3>
+						<p>Классический итальянский кофе, насыщенный и крепкий.</p>
+						<span class="price">150 руб.</span>
+						<button onclick="addToCart('Эспрессо', 150)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Капучино</h3>
+						<p>Нежный кофе с молочной пенкой.</p>
+						<span class="price">200 руб.</span>
+						<button onclick="addToCart('Капучино', 200)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Флэт Уайт</h3>
+						<p>Двойная порция эспрессо со взбитым молоком..</p>
+						<span class="price">200 руб.</span>
+						<button onclick="addToCart('Флэт Уайт', 200)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Какао</h3>
+						<p>Любимый сладкий напиток - какао с молоком.</p>
+						<span class="price">200 руб.</span>
+						<button onclick="addToCart('Какао', 200)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Салат «Цезарь»</h3>
+						<p>Свежий салат с куриной грудкой и фирменным соусом.</p>
+						<span class="price">350 руб.</span>
+						<button onclick="addToCart('Салат «Цезарь»', 350)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Бургер «Классический»</h3>
+						<p>Сочная котлета с овощами и фирменным соусом в булочке.</p>
+						<span class="price">400 руб.</span>
+						<button onclick="addToCart('Бургер «Классический', 400)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+						<h3>Феттучини с мясом цыпленка под сливочным соусом</h3>
+						<p> классическое, сытное итальянское блюдо </p>
+						<span class="price">450 руб.</span>
+						<button onclick="addToCart('Феттучини с мясом цыпленка под сливочным соусом', 450)">Добавить в корзину</button>
+					</div>
+					<div class="menu-item">
+					<h3>Зелёный салат с авокадо и цитрусовой заправкой</h3>
+						<p>Летний салат со сладким апельсином</p>
+						<span class="price">440 руб.</span>
+						<button onclick="addToCart('Зелёный салат с авокадо и цитрусовой заправкой', 440)">Добавить в корзину</button>
+					</div>
+				</div>
+
+   
+        <div class="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итого: <span id="cart-total">0</span> руб.</p>
+            <button id="checkout-btn" onclick="checkout()">Оформить заказ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+	
+	
+	
+        </section>
+        
+        <section class="cooperation-cta">
+            <h2>Хотите войти в команду?</h2>
+            <button onclick="window.location.href='cooperation.html'"> Подробнее</button>
+        </section>
+        
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <p>Адрес: г. Москва, ул. Речная, д. 15</p>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Email: info@vkusnykod.ru</p>
+            <p>Часы работы: 7:00–22:00 ежедневно</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Кафе «Вкусный код». Все права защищены.</p>
+    </footer>
+</body>
+</html>
